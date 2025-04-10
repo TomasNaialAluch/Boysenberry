@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seguro para Inquilinos - Boysenberry</title>
+  
+  <!-- Bootstrap + Fuente -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  
+  <!-- CSS: Layout y estilos específicos -->
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/inquilinos.css">
+</head>
+<body>
+  <!-- Header / Navbar -->
+  <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-custom">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+      <div class="d-flex gap-3">
+        <!-- Marcar el enlace activo según la página -->
+        <a class="nav-link active-inquilinos" href="Inquilinos.html">Inquilinos</a>
+        <a class="nav-link" href="Propietarios.html">Propietarios</a>
+        <a class="nav-link" href="Auto.html">Auto</a>
+        <a class="nav-link" href="Mascota.html">Mascota</a>
+        <a class="nav-link" href="Vida.html">Vida</a>
+        <a class="nav-link" href="Giveback.html">Giveback</a>
+      </div>
+      <a class="navbar-brand boysenberry-text" href="../index.html">Boysenberry</a>
+      <div>
+        <a class="nav-link" href="MiCuenta.html">Mi cuenta</a>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Sección Hero (Contenido Principal) -->
+  <main class="main-hero">
+    <div class="hero-content">
+      <h1 class="titulo-principal">Seguro para Inquilinos</h1>
+      <p class="texto-secundario">Protege tu alquiler y vive tranquilo. Nuestra cobertura para inquilinos te brinda la seguridad que necesitas para disfrutar de tu hogar sin preocupaciones.</p>
+      <button class="boton-principal">Consulta nuestros planes</button>
+      <p class="texto-despues-boton">Asesoramiento personalizado y protección a la medida de tus necesidades.</p>
+    </div>
+  </main>
+  
+  <!-- Sección de Contenido Adicional: Planes y Beneficios -->
+  <section class="plans-section py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Nuestros Planes para Inquilinos</h2>
+      <div class="row">
+        <!-- Card 1: Cobertura Básica -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="https://via.placeholder.com/350x200?text=Cobertura+B%C3%A1sica" class="card-img-top" alt="Cobertura Básica">
+            <div class="card-body">
+              <h5 class="card-title">Cobertura Básica</h5>
+              <p class="card-text">Protege tus pertenencias esenciales y cubre la responsabilidad civil básica, ideal para quienes buscan la opción más accesible.</p>
+            </div>
+            <div class="card-footer text-center">
+              <a href="#" class="btn btn-primary">Cotizar</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2: Cobertura Extendida -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="https://via.placeholder.com/350x200?text=Cobertura+Extendida" class="card-img-top" alt="Cobertura Extendida">
+            <div class="card-body">
+              <h5 class="card-title">Cobertura Extendida</h5>
+              <p class="card-text">Amplía la protección con beneficios adicionales, incluyendo asistencia en el hogar, cobertura de daños accidentales y más.</p>
+            </div>
+            <div class="card-footer text-center">
+              <a href="#" class="btn btn-primary">Cotizar</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3: Asesoría Personalizada -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="https://via.placeholder.com/350x200?text=Asesor%C3%ADa+Personalizada" class="card-img-top" alt="Asesoría Personalizada">
+            <div class="card-body">
+              <h5 class="card-title">Asesoría Personalizada</h5>
+              <p class="card-text">Recibe asesoramiento experto para elegir el plan que se adapte a tu situación y necesidades específicas como inquilino.</p>
+            </div>
+            <div class="card-footer text-center">
+              <a href="#" class="btn btn-primary">Saber Más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<!-- Sección de Testimonios (Carousel) -->
+<section class="testimonials-carousel py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Lo que dicen nuestros clientes</h2>
+      <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1000">
+        <div class="carousel-inner">
+          <!-- Primer slide con dos testimonios -->
+          <div class="carousel-item active">
+            <div class="row">
+              <!-- Testimonio 1 -->
+              <div class="col-md-6 mb-4">
+                <div class="card shadow-sm">
+                  <div class="card-body">
+                    <p class="card-text">"Con Boysenberry, mi experiencia como inquilino mejoró notablemente. La atención personalizada y la rapidez en la atención me brindaron seguridad."</p>
+                    <div class="star-rating mb-2">
+                      <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                    </div>
+                    <h6 class="card-subtitle text-muted">– María López</h6>
+                  </div>
+                </div>
+              </div>
+              <!-- Testimonio 2 -->
+              <div class="col-md-6 mb-4">
+                <div class="card shadow-sm">
+                  <div class="card-body">
+                    <p class="card-text">"Una solución innovadora y moderna. Ahora duermo tranquilo sabiendo que mi alquiler está bien protegido."</p>
+                    <div class="star-rating mb-2">
+                      <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                    </div>
+                    <h6 class="card-subtitle text-muted">– Carlos Méndez</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Segundo slide -->
+          <div class="carousel-item">
+            <div class="row">
+              <!-- Testimonio 3 -->
+              <div class="col-md-6 mb-4">
+                <div class="card shadow-sm">
+                  <div class="card-body">
+                    <p class="card-text">"La asesoría personalizada que recibí fue excepcional y me ayudó a escoger el plan ideal para mi situación."</p>
+                    <div class="star-rating mb-2">
+                      <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                    </div>
+                    <h6 class="card-subtitle text-muted">– Ana García</h6>
+                  </div>
+                </div>
+              </div>
+              <!-- Testimonio 4 -->
+              <div class="col-md-6 mb-4">
+                <div class="card shadow-sm">
+                  <div class="card-body">
+                    <p class="card-text">"Excelente servicio y una cobertura completa. Me siento seguro y respaldado en cada paso."</p>
+                    <div class="star-rating mb-2">
+                      <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                    </div>
+                    <h6 class="card-subtitle text-muted">– Luis Rodríguez</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Tercer slide -->
+          <div class="carousel-item">
+            <div class="row">
+              <!-- Testimonio 5 -->
+              <div class="col-md-6 mb-4">
+                <div class="card shadow-sm">
+                  <div class="card-body">
+                    <p class="card-text">"Estoy muy satisfecho con la rapidez y calidad del servicio. Recomiendo Boysenberry a todos los inquilinos."</p>
+                    <div class="star-rating mb-2">
+                      <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                    </div>
+                    <h6 class="card-subtitle text-muted">– Sofía Martínez</h6>
+                  </div>
+                </div>
+              </div>
+              <!-- Testimonio 6 -->
+              <div class="col-md-6 mb-4">
+                <div class="card shadow-sm">
+                  <div class="card-body">
+                    <p class="card-text">"La experiencia con Boysenberry fue impecable: fácil, rápida y confiable. Mi tranquilidad es lo primero."</p>
+                    <div class="star-rating mb-2">
+                      <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                    </div>
+                    <h6 class="card-subtitle text-muted">– Roberto Jiménez</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Controles del Carousel (opcional) -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </div>
+  </section>
+  
+  
+
+  
+  <!-- Footer -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <h3>Productos</h3>
+        <ul>
+          <li>Seguro de Hogar</li>
+          <li>Seguro de Auto</li>
+          <li>Seguro de Mascotas</li>
+          <li>Seguro de Vida</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Seguro de Hogar</h3>
+        <ul>
+          <li>Qué es el Seguro de Hogar</li>
+          <li>Cobertura</li>
+          <li>Costo</li>
+          <li>Paquete Auto y Hogar</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Seguro de Auto</h3>
+        <ul>
+          <li>Qué es el Seguro de Auto</li>
+          <li>Cobertura</li>
+          <li>Costo</li>
+          <li>Seguro por Kilómetro</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Seguro de Mascotas</h3>
+        <ul>
+          <li>Qué es el Seguro de Mascotas</li>
+          <li>Cobertura</li>
+          <li>Costo</li>
+          <li>Comparar Seguros</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-info">
+      <div>Boysenberry Seguros, Av. Corrientes 1234, Piso 5, CABA, Argentina.</div>
+      <div>Síguenos: Facebook | Twitter | Instagram | LinkedIn | YouTube | TikTok</div>
+      <div>Contacto: 1-800-123-4567 | ayuda@boysenberry.com</div>
+      <div>
+        <a href="#">Términos del Servicio</a> | 
+        <a href="#">Aviso Legal</a> | 
+        <a href="#">Política de Privacidad</a> | 
+        <a href="#">Accesibilidad</a>
+      </div>
+      <div>Los seguros están sujetos a condiciones y restricciones. Boysenberry Seguros es una agencia autorizada.</div>
+    </div>
+  </footer>
+  
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

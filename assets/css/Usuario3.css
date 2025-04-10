@@ -1,0 +1,290 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stickybar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  height: 50px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.menu-icon {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 10px;
+}
+
+.imagen-menu {
+  width: 37px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.right-icons {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.imagen-question,
+.imagen-info {
+  width: 28px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.imagen-info {
+  width: 34px;
+  height: auto;
+}
+
+.usuarioTres {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  padding-top: 50px;
+}
+
+.berry-outside {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.imagen-berry {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+
+.Berrytext {
+  width: 451px;
+  margin: 20px auto;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 22px;
+  font-weight: 500;
+  color: #5d5d5d;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.auto-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 80%;
+  max-width: 600px;
+  margin: 40px auto 0;
+  margin-bottom: 40px;
+}
+
+.col-izq {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Vector {
+  width: 39px;
+  height: 34.7px;
+  object-fit: contain;
+}
+
+.col-der {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contenedor-input-auto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.eti-auto {
+  font-size: 12px;
+  font-weight: 500;
+  color: #3d3d3d;
+  margin-bottom: 4px;
+}
+
+.rectangulo-input-auto {
+  width: 140px;
+  height: 34px;
+  padding: 4px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 14px;
+  color: #3d3d3d;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.rectangulo-input-auto:focus {
+  border-color: #403c7c;
+  box-shadow: 0 0 5px rgba(64, 60, 124, 0.5);
+  outline: none;
+}
+
+.cont-planes {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin: 40px auto 0;
+}
+
+.plan-boton {
+  cursor: pointer;
+  display: inline-flex; 
+}
+
+.radio-plan {
+  display: none;
+}
+
+.plan-esencial {
+  width: 197px;
+  height: 197px;
+  padding: 14px 20px 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(83, 83, 83, 0.67);
+  background-color: #f2f2f2;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: flex-start;
+}
+
+.tit-plan {
+  font-size: 20px;
+  font-weight: 800;
+  color: #3d3d3d;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.desc-plan {
+  list-style: disc;
+  padding-left: 20px;
+  margin: 4px 0 0;
+  font-size: 10px;
+  font-weight: bold;
+  color: #3d3d3d;
+  line-height: 1.3;
+  text-align: left;
+}
+
+.plan-esencial .circ-plan {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #cecece;
+  border-radius: 50%;
+  background-color: transparent;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.radio-plan:checked + .caja-plan {
+  box-shadow: inset 0 4px 4px rgba(64, 60, 124, 0.25);
+  border: 1px solid rgba(64, 60, 124, 0.67);
+  background-color: #fff;
+}
+
+.radio-plan:checked + .caja-plan .circ-plan {
+  background-color: #403c7c;
+  border: none;
+}
+
+.radio-plan:checked + .caja-plan .tit-plan {
+  color: #403c7c;
+}
+
+.boton-siguiente {
+  width: 100px;
+  height: 40px;
+  margin: 40px auto 0;
+  background-color: #403c7c;
+  color: white;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 2px 14px rgba(64, 60, 124, 0.54);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boton-siguiente:hover {
+  background-color: #2e2963;
+}
+
+.texto-boton {
+  margin: 0;
+}
+.felicitaciones-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+  }
+  
+  .felicitaciones-message {
+    background-color: #fff;
+    color: #403c7c;  /* Color primario de la marca */
+    font-size: 36px;
+    font-weight: 800;
+    padding: 40px 60px;
+    border-radius: 8px;
+    box-shadow: 0 4px 14px rgba(64, 60, 124, 0.5);
+    text-align: center;
+  }
+  
+.menu-icon .boysenberry-text {
+  order: 2; /* Texto a la derecha del ícono */
+  margin-left: 8px; /* Espacio entre ícono y texto */
+  font-family: "Lato-MediumItalic", Helvetica;
+  font-size: 21px; /* Tamaño ajustado según Index.html */
+  color: #403c7c; /* Color ajustado según Index.html */
+  text-decoration: none;
+}

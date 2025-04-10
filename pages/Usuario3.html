@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Información sobre tu auto para que Berry te muestre los mejores planes">
+  <title>Información del Auto - Boysenberry</title>
+  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" type="text/css" href="Usuario3.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700;800;900&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+      .btn-siguiente-estandar {
+          width: 100px;
+          height: 40px;
+          background-color: #403c7c;
+          color: white;
+          font-size: 16px;
+          font-style: italic;
+          font-weight: 500;
+          border: none;
+          border-radius: 8px;
+          box-shadow: 0px 2px 14px rgba(64, 60, 124, 0.54);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          transition: background-color 0.3s;
+          margin: 40px auto 0;
+      }
+      .btn-siguiente-estandar:hover {
+          background-color: #2e2963;
+      }
+  </style>
+</head>
+<body>
+  <header class="stickybar">
+    <div class="menu-icon">
+    <a href="index.html" class="boysenberry-text">Boysenberry</a>
+      <img
+        class="imagen-menu"
+        src="Usuario2/MenuIcon.png"
+        alt="Menú"
+        aria-label="Menú"
+      />
+    </div>
+    <div class="right-icons">
+      <img
+        class="imagen-question"
+        src="Usuario2/AskIcon.png"
+        alt="Preguntas Frecuentes"
+        aria-label="Preguntas Frecuentes"
+      />
+      <img
+        class="imagen-info"
+        src="Usuario2/InfoIcon.png"
+        alt="Información"
+        aria-label="Información"
+      />
+    </div>
+  </header>
+
+  <main class="usuarioTres">
+    <div class="berry-outside">
+      <img
+        class="imagen-berry"
+        src="Usuario2/Berry.png"
+        alt="Berry"
+      />
+      <div class="Berrytext">
+        ¡Ahora dime sobre tu auto! <br>
+        Para mostrarte los mejores planes.
+      </div>
+    </div>
+
+    <div class="auto-info">
+      <div class="col-izq">
+        <img
+          class="Vector"
+          src="Usuario2/CarIcon.png"
+          alt="Icono de Auto"
+        />
+      </div>
+      <div class="col-der">
+        <div class="contenedor-input-auto">
+          <label for="marca" class="eti-auto">Marca</label>
+          <input
+            type="text"
+            id="marca"
+            class="rectangulo-input-auto"
+            placeholder="Ingresa la marca"
+          />
+        </div>
+        <div class="contenedor-input-auto">
+          <label for="modelo" class="eti-auto">Modelo</label>
+          <input
+            type="text"
+            id="modelo"
+            class="rectangulo-input-auto"
+            placeholder="Ingresa el modelo"
+          />
+        </div>
+        <div class="contenedor-input-auto">
+          <label for="patente" class="eti-auto">Patente</label>
+          <input
+            type="text"
+            id="patente"
+            class="rectangulo-input-auto"
+            placeholder="Ingresa la patente"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="cont-planes">
+      <label class="plan-boton">
+        <input type="radio" name="plan" class="radio-plan" disabled />
+        <div class="caja-plan plan-esencial">
+          <span class="tit-plan">Esencial</span>
+          <ul class="desc-plan">
+            <li>Cobertura contra terceros</li>
+            <li>Robo total</li>
+            <li>Incendio total</li>
+            <li>Asistencia básica en ruta</li>
+          </ul>
+          <div class="circ-plan"></div>
+        </div>
+      </label>
+
+      <label class="plan-boton">
+        <input type="radio" name="plan" class="radio-plan" disabled />
+        <div class="caja-plan plan-esencial">
+          <span class="tit-plan">Avanzado</span>
+          <ul class="desc-plan">
+            <li>Todo lo del Plan Esencial</li>
+            <li>Robo total y parcial</li>
+            <li>Incendio total y parcial</li>
+            <li>Daños por granizo</li>
+            <li>Auto sustituto por 5 días</li>
+            <li>Asistencia extendida en ruta</li>
+          </ul>
+          <div class="circ-plan"></div>
+        </div>
+      </label>
+
+      <label class="plan-boton">
+        <input type="radio" name="plan" class="radio-plan" disabled />
+        <div class="caja-plan plan-esencial">
+          <span class="tit-plan">Premium</span>
+          <ul class="desc-plan">
+            <li>Todo lo del Plan Avanzado</li>
+            <li>Cobertura contra todo riesgo</li>
+            <li>Vidrios laterales y parabrisas incluidos</li>
+            <li>Auto sustituto por 15 días</li>
+            <li>Asistencia VIP en ruta</li>
+            <li>Cobertura internacional</li>
+          </ul>
+          <div class="circ-plan"></div>
+        </div>
+      </label>
+    </div>
+
+    <button class="btn-siguiente-estandar">
+      <span class="texto-boton">Siguiente</span>
+    </button>
+  </main>
+
+  <!-- Overlay de felicitaciones (inicialmente oculto) -->
+  <div id="felicitaciones-overlay" class="felicitaciones-overlay" style="display: none;">
+    <div class="felicitaciones-message">
+      ¡Felicitaciones!
+    </div>
+  </div>
+
+  <script>
+    function checkAutoInputs() {
+      const marca = document.getElementById('marca').value.trim();
+      const modelo = document.getElementById('modelo').value.trim();
+      const patente = document.getElementById('patente').value.trim();
+      const radios = document.querySelectorAll('input[name="plan"]');
+      if (marca !== "" && modelo !== "" && patente !== "") {
+        radios.forEach(radio => radio.disabled = false);
+      } else {
+        radios.forEach(radio => radio.disabled = true);
+      }
+    }
+
+    document.getElementById('marca').addEventListener('input', checkAutoInputs);
+    document.getElementById('modelo').addEventListener('input', checkAutoInputs);
+    document.getElementById('patente').addEventListener('input', checkAutoInputs);
+
+    document.querySelector('.btn-siguiente-estandar').addEventListener('click', function() {
+      const marca = document.getElementById('marca').value.trim();
+      const modelo = document.getElementById('modelo').value.trim();
+      const patente = document.getElementById('patente').value.trim();
+      const planSeleccionado = document.querySelector('input[name="plan"]:checked');
+
+      if (marca === "" || modelo === "" || patente === "" || !planSeleccionado) {
+        alert("Por favor, completa todos los datos del auto y selecciona un plan.");
+      } else {
+        document.getElementById('felicitaciones-overlay').style.display = 'flex';
+      }
+    });
+  </script>
+</body>
+</html>

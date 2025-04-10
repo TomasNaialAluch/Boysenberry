@@ -1,0 +1,277 @@
+/* ================================
+  Estilos específicos para Vida
+=============================================== */
+main.main-hero {
+    width: 100%;
+    /* Fondo específico para Vida */
+    background-image: url('/assets/VidaFondo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+    gap: 20px;
+  }
+  
+  .hero-content {
+    transform: translateY(-20px);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .titulo-principal {
+    width: 100%;
+    max-width: 777px;
+    margin: 0 auto 5px;
+    text-shadow: 0 4px 4px rgba(0,0,0,0.25);
+    font-family: 'Lato', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: center;
+    color: #464646;
+  }
+  
+  .texto-secundario {
+    width: 90%;
+    margin: 0 auto 20px;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    color: #464646;
+  }
+  
+  .boton-principal {
+    width: 230px;
+    height: 36px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 14.1px 1px rgba(64,60,124,0.54);
+    background-color: #403c7c;
+    color: white;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 500;
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    padding: 8px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .boton-principal:hover {
+    background-color: #2e2963;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 18px rgba(64,60,124,0.7);
+  }
+  
+  .texto-despues-boton {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #464646;
+  }
+  /* ================================
+  Estilos para Seguro de Vida
+=================================== */
+
+/* Hero */
+main.main-hero {
+    width: 100%;
+    background-image: url('/assets/VidaFondo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 20px 60px;
+  }
+  
+  .hero-content {
+    max-width: 800px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Sección de Planes */
+  .plans-section {
+    padding: 50px 20px;
+  }
+  
+  .section-title {
+    font-family: 'Lato', sans-serif;
+    font-size: 32px;
+    color: #403c7c;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .plans-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .plan-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .plan-card h5 {
+    font-size: 20px;
+    color: #403c7c;
+    font-weight: 600;
+  }
+  
+  .plan-price {
+    font-size: 26px;
+    color: #403c7c;
+    font-weight: 700;
+  }
+  
+  .plan-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+    text-align: left;
+  }
+  
+  .plan-card ul li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #464646;
+  }
+  
+  .btn-plan {
+    background-color: #403c7c;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-style: italic;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-plan:hover {
+    background-color: #2e2963;
+  }
+  
+  /* Beneficios */
+  .benefits-section {
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+  }
+  
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .benefit-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .benefit-card h5 {
+    color: #403c7c;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .benefit-card p {
+    font-size: 14px;
+    color: #464646;
+  }
+  
+  /* Testimonios */
+  .testimonials-section {
+    padding: 50px 20px;
+  }
+  
+  .testimonial-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial-card p {
+    font-size: 14px;
+    color: #464646;
+    margin-bottom: 10px;
+  }
+  
+  .star-rating {
+    color: #403c7c;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial-card h6 {
+    font-size: 14px;
+    color: #403c7c;
+    font-weight: 600;
+  }
+  
+  /* FAQ */
+  .faq-section {
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .faq-item {
+    margin-bottom: 20px;
+  }
+  
+  .faq-item h5 {
+    color: #403c7c;
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  
+  .faq-item p {
+    font-size: 14px;
+    color: #464646;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 767px) {
+    .plans-grid,
+    .benefits-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  

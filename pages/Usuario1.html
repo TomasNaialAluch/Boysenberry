@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Regístrate y crea tu cuenta en Boysenberry fácilmente. Solo necesitas proporcionar algunos datos básicos para empezar.">
+    <title>Crear cuenta en Boysenberry</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" type="text/css" href="Usuario1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700&display=swap" rel="stylesheet"/>
+    <!-- Bootstrap CSS encapsulado solo para el botón -->
+    <style>
+        /* Bootstrap CSS minificado y encapsulado */
+        .bs-btn{display:inline-block;font-weight:400;line-height:1.5;color:#212529;text-align:center;text-decoration:none;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;padding:.375rem .75rem;font-size:1rem;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}
+        @media (prefers-reduced-motion:reduce){.bs-btn{transition:none}}
+        .bs-btn:hover{color:#212529}
+        .bs-btn:focus{outline:0;box-shadow:0 0 0 .25rem rgba(13,110,253,.25)}
+        .bs-btn-primary{color:#fff;background-color:#0d6efd;border-color:#0d6efd}
+        .bs-btn-primary:hover{color:#fff;background-color:#0b5ed7;border-color:#0a58ca}
+        .bs-btn-primary:focus{color:#fff;background-color:#0b5ed7;border-color:#0a58ca;box-shadow:0 0 0 .25rem rgba(49,132,253,.5)}
+        
+        /* Estilo personalizado para el botón */
+        .btn-boysenberry {
+            width: 100px !important;
+            height: 40px !important;
+            background-color: #403c7c !important;
+            color: white !important;
+            font-size: 16px !important;
+            font-style: italic !important;
+            font-weight: 500 !important;
+            border: none !important;
+            border-radius: 8px !important;
+            box-shadow: 0px 2px 14px rgba(64, 60, 124, 0.54) !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            text-decoration: none !important;
+            transition: background-color 0.3s !important;
+            position: absolute !important;
+            left: 50% !important;
+            transform: translateX(-50%) !important;
+            top: 50% !important;
+        }
+        .btn-boysenberry:hover {
+            background-color: #2e2963 !important;
+        }
+    </style>
+</head>
+<body>
+  <header class="stickybar">
+    <div class="menu-icon">
+    <a href="index.html" class="boysenberry-text">Boysenberry</a>
+        <img class="imagen-menu" src="Usuario2/MenuIcon.png" alt="Menú" aria-label="Menú">
+    </div>
+    <div class="right-icons">
+        <img class="imagen-question" src="Usuario2/AskIcon.png" alt="Preguntas Frecuentes" aria-label="Preguntas Frecuentes">
+        <img class="imagen-info" src="Usuario2/InfoIcon.png" alt="Información" aria-label="Información">
+    </div>
+  </header>
+
+  <main class="usuarioOne">
+    <div class="berry-outside">
+        <img class="imagen-berry" src="Usuario2/Berry.png" alt="Berry">
+        <div class="Berrytext">
+            Hola soy Berry! <br> ¿Tienes una cuenta en Boysenberry?
+        </div>
+    </div>
+
+    <div class="contenedor-botones">
+      <button class="btn-opcion" aria-pressed="false" onclick="seleccionExclusiva(this)">
+        <span class="circulo"></span>
+        <span class="texto">Sí</span>
+      </button>
+      <button class="btn-opcion" aria-pressed="false" onclick="seleccionExclusiva(this)">
+        <span class="circulo"></span>
+        <span class="texto">No</span>
+      </button>
+    </div>
+
+    <button class="bs-btn bs-btn-primary btn-boysenberry">
+      <span class="texto-boton">Siguiente</span>
+    </button>
+  </main>
+
+  <script>
+    // Función para seleccionar una única opción
+    function seleccionExclusiva(botonClic) {
+      const todos = document.querySelectorAll(".btn-opcion");
+      todos.forEach((b) => {
+        b.classList.remove("activo");
+        b.setAttribute("aria-pressed", "false");
+      });
+      botonClic.classList.add("activo");
+      botonClic.setAttribute("aria-pressed", "true");
+    }
+
+    // Al pulsar "Siguiente", se redirige a Usuario2.html solo si el usuario seleccionó "No"
+    document.querySelector('.btn-boysenberry').addEventListener('click', function() {
+      const activo = document.querySelector('.btn-opcion.activo');
+      if (activo && activo.querySelector('.texto').textContent.trim() === "No") {
+        window.location.href = "Usuario2.html";
+      }
+      // Aquí podrías manejar qué ocurre si el usuario seleccionó "Sí"
+    });
+  </script>
+</body>
+</html>

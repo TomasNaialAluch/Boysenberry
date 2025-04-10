@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seguro de Vida - Boysenberry</title>
+
+  <!-- Bootstrap + Fuente -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+  <!-- CSS: Layout y estilos de Vida -->
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/vida.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-custom">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+      <div class="d-flex gap-3">
+        <a class="nav-link" href="Inquilinos.html">Inquilinos</a>
+        <a class="nav-link" href="Propietarios.html">Propietarios</a>
+        <a class="nav-link" href="Auto.html">Auto</a>
+        <a class="nav-link" href="Mascota.html">Mascota</a>
+        <a class="nav-link active-vida" href="Vida.html">Vida</a>
+        <a class="nav-link" href="Giveback.html">Giveback</a>
+      </div>
+      <a class="navbar-brand boysenberry-text" href="../index.html">Boysenberry</a>
+      <div>
+        <a class="nav-link" href="MiCuenta.html">Mi cuenta</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <main class="main-hero">
+    <div class="hero-content">
+      <h1 class="titulo-principal">Seguro de Vida</h1>
+      <p class="texto-secundario">
+        Protege a tu familia ante lo inesperado con nuestras pólizas de vida flexibles y asequibles.
+      </p>
+      <button class="boton-principal">Ver planes de vida</button>
+      <p class="texto-despues-boton">
+        Cobertura hasta $1.000.000 · Pago mensual o anual
+      </p>
+    </div>
+  </main>
+
+  <!-- Sección de Planes -->
+  <section class="plans-section py-5">
+    <h2 class="section-title">Elige tu Plan de Vida</h2>
+    <div class="plans-grid">
+      <div class="plan-card">
+        <h5>Esencial</h5>
+        <p class="plan-price">$150/mes</p>
+        <ul>
+          <li>Cobertura básica hasta $100K</li>
+          <li>Asesoría telefónica</li>
+          <li>Pago flexible</li>
+        </ul>
+        <a href="#" class="btn btn-plan">Contratar</a>
+      </div>
+      <div class="plan-card">
+        <h5>Familiar</h5>
+        <p class="plan-price">$300/mes</p>
+        <ul>
+          <li>Cobertura hasta $300K</li>
+          <li>Protección para cónyuge e hijos</li>
+          <li>Asistencia médica 24/7</li>
+        </ul>
+        <a href="#" class="btn btn-plan">Contratar</a>
+      </div>
+      <div class="plan-card">
+        <h5>Premium</h5>
+        <p class="plan-price">$450/mes</p>
+        <ul>
+          <li>Cobertura ilimitada</li>
+          <li>Asesoría financiera</li>
+          <li>Beneficios exclusivos</li>
+        </ul>
+        <a href="#" class="btn btn-plan">Contratar</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Beneficios -->
+  <section class="benefits-section py-5 bg-light">
+    <h2 class="section-title">Beneficios Clave</h2>
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <h5>Pago Rápido</h5>
+        <p>Indemnización en menos de 48 horas tras la validación.</p>
+      </div>
+      <div class="benefit-card">
+        <h5>Flexibilidad</h5>
+        <p>Cambia tu monto de cobertura en cualquier momento.</p>
+      </div>
+      <div class="benefit-card">
+        <h5>Asesoría</h5>
+        <p>Consultas ilimitadas con expertos en seguros de vida.</p>
+      </div>
+      <div class="benefit-card">
+        <h5>Sin Exámenes</h5>
+        <p>Planes hasta $200K sin necesidad de examen médico.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Testimonios -->
+  <section class="testimonials-section py-5">
+    <h2 class="section-title text-center">Testimonios</h2>
+    <div class="row justify-content-center gx-4">
+      <div class="col-md-4 mb-4">
+        <div class="testimonial-card">
+          <p>"Elegí el plan Familiar y me dio paz mental saber que mi familia está cubierta."</p>
+          <div class="star-rating">★★★★★</div>
+          <h6>– Ana P.</h6>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="testimonial-card">
+          <p>"El proceso fue sencillo y rápido. Muy recomendable para cualquier edad."</p>
+          <div class="star-rating">★★★★☆</div>
+          <h6>– Jorge L.</h6>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="testimonial-card">
+          <p>"Con Premium siento que mi familia está protegida al 100%. Excelente servicio."</p>
+          <div class="star-rating">★★★★★</div>
+          <h6>– Laura G.</h6>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección FAQ -->
+  <section class="faq-section py-5 bg-light">
+    <h2 class="section-title">Preguntas Frecuentes</h2>
+    <div class="faq-item">
+      <h5>¿Qué edad máxima aceptan?</h5>
+      <p>Hasta 65 años en el plan Esencial, sin límite en Premium.</p>
+    </div>
+    <div class="faq-item">
+      <h5>¿Puedo pausar mis pagos?</h5>
+      <p>Sí, una vez al año puedes suspender un mes sin costo.</p>
+    </div>
+    <div class="faq-item">
+      <h5>¿Cómo se realiza el pago?</h5>
+      <p>Débito automático o tarjeta de crédito con opción mensual o anual.</p>
+    </div>
+  </section>
+  <!-- Sección: Calculadora de Cobertura -->
+  <section class="calculator-section py-5">
+    <div class="container">
+      <h2 class="section-title">Calculadora de Cobertura</h2>
+      <div class="calculator-card mx-auto">
+        <form id="coverageCalcForm">
+          <div class="mb-3">
+            <label for="age" class="form-label">Edad</label>
+            <input type="number" class="form-control" id="age" min="18" max="100" placeholder="Tu edad">
+          </div>
+          <div class="mb-3">
+            <label for="coverage" class="form-label">Cobertura deseada ($)</label>
+            <input type="number" class="form-control" id="coverage" min="50000" step="10000" placeholder="Monto en USD">
+          </div>
+          <button type="submit" class="btn btn-plan">Calcular Prima</button>
+        </form>
+        <div id="calcResult" class="mt-3"></div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <h3>Productos</h3>
+        <ul>
+          <li>Seguro de Hogar</li>
+          <li>Seguro de Auto</li>
+          <li>Seguro de Mascotas</li>
+          <li>Seguro de Vida</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Seguro de Hogar</h3>
+        <ul>
+          <li>Qué es el Seguro de Hogar</li>
+          <li>Cobertura</li>
+          <li>Costo</li>
+          <li>Paquete Auto y Hogar</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Seguro de Auto</h3>
+        <ul>
+          <li>Qué es el Seguro de Auto</li>
+          <li>Cobertura</li>
+          <li>Costo</li>
+          <li>Seguro por Kilómetro</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Seguro de Mascotas</h3>
+        <ul>
+          <li>Qué es el Seguro de Mascotas</li>
+          <li>Cobertura</li>
+          <li>Costo</li>
+          <li>Comparar Seguros</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-info">
+      <div>Boysenberry Seguros, Av. Corrientes 1234, Piso 5, CABA, Argentina.</div>
+      <div>Síguenos: Facebook | Twitter | Instagram | LinkedIn | YouTube | TikTok</div>
+      <div>Contacto: 1-800-123-4567 | ayuda@boysenberry.com</div>
+      <div>
+        <a href="#">Términos del Servicio</a> |
+        <a href="#">Aviso Legal</a> |
+        <a href="#">Política de Privacidad</a> |
+        <a href="#">Accesibilidad</a>
+      </div>
+      <div>Los seguros están sujetos a condiciones y restricciones. Boysenberry Seguros es una agencia autorizada.</div>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('coverageCalcForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const age = parseInt(document.getElementById('age').value, 10);
+      const cov = parseInt(document.getElementById('coverage').value, 10);
+      if (!age || !cov) {
+        document.getElementById('calcResult').innerHTML = '<p class="text-danger">Por favor completa ambos campos.</p>';
+        return;
+      }
+      // Fórmula simple: prima = (cobertura / 1000) * (1 + (edad - 30)/100)
+      let prima = (cov / 1000) * (1 + (age - 30) / 100);
+      prima = prima.toFixed(2);
+      document.getElementById('calcResult').innerHTML =
+        `<p>Prima estimada: <strong>$${prima}/mes</strong></p>`;
+    });
+  </script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
