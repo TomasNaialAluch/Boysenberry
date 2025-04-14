@@ -3,6 +3,11 @@
 =============================================== */
 
 /* Área Hero – Fondo y contenido principal */
+/* Resaltar link activo en Inquilinos */
+.nav-link.active-inquilinos {
+  color: #6c757d !important; /* Gris claro */
+  font-weight: 500;
+}
 main.main-hero {
   width: 100%;
   background-image: url('/assets/InquilinosFondo.png');

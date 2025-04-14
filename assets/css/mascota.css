@@ -1,7 +1,11 @@
 /* ================================
   Estilos específicos para Mascota
 =================================== */
-
+/* Resaltar link activo en Mascota */
+.nav-link.active-mascota {
+  color: #6c757d !important;
+  font-weight: 500;
+}
   
 main.main-hero {
     width: 100%;
