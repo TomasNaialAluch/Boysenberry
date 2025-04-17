@@ -6,69 +6,32 @@
   <meta name="description" content="Información sobre tu auto para que Berry te muestre los mejores planes">
   <title>Información del Auto - Boysenberry</title>
   <link rel="stylesheet" href="global.css">
-  <link rel="stylesheet" type="text/css" href="Usuario3.css" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700;800;900&display=swap"
-    rel="stylesheet"
-  />
-  <style>
-      .btn-siguiente-estandar {
-          width: 100px;
-          height: 40px;
-          background-color: #403c7c;
-          color: white;
-          font-size: 16px;
-          font-style: italic;
-          font-weight: 500;
-          border: none;
-          border-radius: 8px;
-          box-shadow: 0px 2px 14px rgba(64, 60, 124, 0.54);
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          cursor: pointer;
-          transition: background-color 0.3s;
-          margin: 40px auto 0;
-      }
-      .btn-siguiente-estandar:hover {
-          background-color: #2e2963;
-      }
-  </style>
+  <link rel="stylesheet" type="text/css" href="/assets/css/Usuario3.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700;800;900&display=swap" rel="stylesheet"/>
 </head>
 <body>
+  <!-- Barra de navegación actualizada -->
   <header class="stickybar">
     <div class="menu-icon">
-    <a href="../index.html" class="boysenberry-text">Boysenberry</a>
-      <img
-        class="imagen-menu"
-        src="Usuario2/MenuIcon.png"
-        alt="Menú"
-        aria-label="Menú"
-      />
+      <button class="navbar-toggler" type="button" aria-label="Menú hamburguesa">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a href="../index.html" class="boysenberry-text">Boysenberry</a>
     </div>
     <div class="right-icons">
-      <img
-        class="imagen-question"
-        src="Usuario2/AskIcon.png"
-        alt="Preguntas Frecuentes"
-        aria-label="Preguntas Frecuentes"
-      />
-      <img
-        class="imagen-info"
-        src="Usuario2/InfoIcon.png"
-        alt="Información"
-        aria-label="Información"
-      />
+      <i class="bi bi-person-fill icon-person" id="personIcon"></i>
+      <div class="icon-container" id="iconContainer">
+        <i class="bi bi-question-circle icon-question-circle"></i>
+        <i class="bi bi-info-circle icon-info-circle"></i>
+      </div>
     </div>
   </header>
 
   <main class="usuarioTres">
     <div class="berry-outside">
-      <img
-        class="imagen-berry"
-        src="Usuario2/Berry.png"
-        alt="Berry"
-      />
+      <img class="imagen-berry" src="/assets/Berry.png" alt="Berry" />
       <div class="Berrytext">
         ¡Ahora dime sobre tu auto! <br>
         Para mostrarte los mejores planes.
@@ -77,44 +40,26 @@
 
     <div class="auto-info">
       <div class="col-izq">
-        <img
-          class="Vector"
-          src="Usuario2/CarIcon.png"
-          alt="Icono de Auto"
-        />
+        <img class="Vector" src="/assets/CarIcon.png" alt="Icono de Auto" />
       </div>
       <div class="col-der">
         <div class="contenedor-input-auto">
           <label for="marca" class="eti-auto">Marca</label>
-          <input
-            type="text"
-            id="marca"
-            class="rectangulo-input-auto"
-            placeholder="Ingresa la marca"
-          />
+          <input type="text" id="marca" class="rectangulo-input-auto" placeholder="Ingresa la marca" />
         </div>
         <div class="contenedor-input-auto">
           <label for="modelo" class="eti-auto">Modelo</label>
-          <input
-            type="text"
-            id="modelo"
-            class="rectangulo-input-auto"
-            placeholder="Ingresa el modelo"
-          />
+          <input type="text" id="modelo" class="rectangulo-input-auto" placeholder="Ingresa el modelo" />
         </div>
         <div class="contenedor-input-auto">
           <label for="patente" class="eti-auto">Patente</label>
-          <input
-            type="text"
-            id="patente"
-            class="rectangulo-input-auto"
-            placeholder="Ingresa la patente"
-          />
+          <input type="text" id="patente" class="rectangulo-input-auto" placeholder="Ingresa la patente" />
         </div>
       </div>
     </div>
 
     <div class="cont-planes">
+      <!-- Planes -->
       <label class="plan-boton">
         <input type="radio" name="plan" class="radio-plan" disabled />
         <div class="caja-plan plan-esencial">
@@ -128,7 +73,6 @@
           <div class="circ-plan"></div>
         </div>
       </label>
-
       <label class="plan-boton">
         <input type="radio" name="plan" class="radio-plan" disabled />
         <div class="caja-plan plan-esencial">
@@ -144,7 +88,6 @@
           <div class="circ-plan"></div>
         </div>
       </label>
-
       <label class="plan-boton">
         <input type="radio" name="plan" class="radio-plan" disabled />
         <div class="caja-plan plan-esencial">
@@ -167,11 +110,8 @@
     </button>
   </main>
 
-  <!-- Overlay de felicitaciones (inicialmente oculto) -->
   <div id="felicitaciones-overlay" class="felicitaciones-overlay" style="display: none;">
-    <div class="felicitaciones-message">
-      ¡Felicitaciones!
-    </div>
+    <div class="felicitaciones-message">¡Felicitaciones!</div>
   </div>
 
   <script>
@@ -202,6 +142,16 @@
       } else {
         document.getElementById('felicitaciones-overlay').style.display = 'flex';
       }
+    });
+
+    // Animación íconos barra
+    const personIcon = document.getElementById('personIcon');
+    const iconContainer = document.getElementById('iconContainer');
+    personIcon.addEventListener('click', () => {
+      personIcon.style.opacity = '0';
+      personIcon.style.pointerEvents = 'none';
+      iconContainer.style.opacity = '1';
+      iconContainer.style.transform = 'scale(1)';
     });
   </script>
 </body>
