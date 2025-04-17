@@ -116,16 +116,21 @@
 
   <script>
     function checkAutoInputs() {
-      const marca = document.getElementById('marca').value.trim();
-      const modelo = document.getElementById('modelo').value.trim();
-      const patente = document.getElementById('patente').value.trim();
-      const radios = document.querySelectorAll('input[name="plan"]');
-      if (marca !== "" && modelo !== "" && patente !== "") {
-        radios.forEach(radio => radio.disabled = false);
-      } else {
-        radios.forEach(radio => radio.disabled = true);
-      }
-    }
+  const marca = document.getElementById('marca').value.trim();
+  const modelo = document.getElementById('modelo').value.trim();
+  const patente = document.getElementById('patente').value.trim();
+  const radios = document.querySelectorAll('input[name="plan"]');
+  const planesContainer = document.querySelector('.cont-planes');
+
+  if (marca !== "" && modelo !== "" && patente !== "") {
+    radios.forEach(radio => radio.disabled = false);
+    planesContainer.classList.add('visible');
+  } else {
+    radios.forEach(radio => radio.disabled = true);
+    planesContainer.classList.remove('visible');
+  }
+}
+
 
     document.getElementById('marca').addEventListener('input', checkAutoInputs);
     document.getElementById('modelo').addEventListener('input', checkAutoInputs);
