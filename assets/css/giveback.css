@@ -9,7 +9,7 @@
 main.main-hero {
     width: 100%;
     /* Fondo específico para Giveback */
-    background-image: url('/assets/ref.png');
+    background-image: url('assets/ref.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

@@ -9,7 +9,7 @@
 main.main-hero {
     width: 100%;
     /* Fondo específico para Vida */
-    background-image: url('/assets/VidaFondo.png');
+    background-image: url('assets/VidaFondo.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -95,7 +95,7 @@ main.main-hero {
 /* Hero */
 main.main-hero {
     width: 100%;
-    background-image: url('/assets/VidaFondo.png');
+    background-image: url('assets/VidaFondo.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

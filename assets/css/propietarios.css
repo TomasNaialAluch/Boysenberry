@@ -9,7 +9,7 @@
 main.main-hero {
     width: 100%;
     /* Fondo específico para Propietarios */
-    background-image: url('/assets/PropietariosFondo.png');
+    background-image: url('assets/PropietariosFondo.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
