@@ -1,19 +1,17 @@
-@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
-
+/* RESET Y ESTILOS BASE */
 * {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
-}
-
-html, body {
   margin: 0;
+  padding: 0;
+}
+html, body {
   font-family: "Lato", sans-serif;
   background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  height: 100%;
 }
 
+/* HEADER */
 .stickybar {
   width: 100%;
   display: flex;
@@ -27,60 +25,84 @@ html, body {
   top: 0;
   z-index: 1000;
 }
-
 .menu-icon {
   display: flex;
   align-items: center;
-  position: absolute;
-  left: 10px;
+  gap: 10px; /* Espacio entre el ícono y el texto Boysenberry */
+}
+.navbar-toggler {
+  border: none; /* Quitamos el borde predeterminado */
+  background-color: transparent; /* Fondo transparente */
+  padding: 0; /* Sin relleno */
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(64, 60, 124, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+.boysenberry-text {
+  font-family: "Lato", sans-serif;
+  font-size: 21px;
+  font-style: italic;
+  font-weight: 500;
+  color: #403c7c;
+  text-decoration: none;
 }
 
-.imagen-menu {
-  width: 37px;
-  height: 50px;
-  object-fit: contain;
-}
-
+/* ÍCONOS A LA DERECHA */
 .right-icons {
   display: flex;
   align-items: center;
-  gap: 5px;
-  position: absolute;
-  right: 5px;
-  top: 50%;
-  transform: translateY(-50%);
+  gap: 20px; /* Espacio entre los íconos */
+}
+.icon-container {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Espacio entre los íconos dentro del contenedor */
+  opacity: 0; /* Inicialmente invisibles */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  transform: scale(0); /* Inicialmente reducidos */
+}
+.icon-person {
+  font-size: 24px;
+  color: #403c7c;
+  transition: transform 0.3s ease, color 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
+}
+.icon-person:hover {
+  transform: scale(1.2); /* Agrandar al pasar el mouse */
+  color: #2e2963; /* Cambiar color al pasar el mouse */
+}
+.icon-question-circle,
+.icon-info-circle {
+  font-size: 24px;
+  color: #403c7c;
+  transition: transform 0.3s ease;
 }
 
-.imagen-question, .imagen-info {
-  width: 28px;
-  height: 50px;
-  object-fit: contain;
-}
-
-.imagen-info {
-  width: 34px;
-  height: auto;
-}
-
+/* CONTENIDO PRINCIPAL */
 .usuarioOne {
   width: 100%;
   min-height: 100vh;
   position: relative;
   padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
 .berry-outside {
   margin-top: 80px;
   text-align: center;
 }
-
 .imagen-berry {
   width: 80px;
   height: 80px;
   object-fit: contain;
   transition: all 0.3s ease;
 }
-
 .Berrytext {
   width: 451px;
   margin: 20px auto;
@@ -92,6 +114,7 @@ html, body {
   line-height: 1.2;
 }
 
+/* BOTONES DE OPCIÓN */
 .contenedor-botones {
   display: flex;
   flex-direction: column;
@@ -99,7 +122,6 @@ html, body {
   gap: 15px;
   margin-top: 50px;
 }
-
 .btn-opcion {
   display: inline-flex;
   align-items: center;
@@ -111,27 +133,21 @@ html, body {
   background-color: rgba(76, 76, 76, 0.07);
   cursor: pointer;
   position: relative;
-  transition: box-shadow 0.3s ease, background-color 0.3s ease,
-    transform 0.1s ease;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease, transform 0.1s ease;
 }
-
 .btn-opcion:hover {
   background-color: rgba(76, 76, 76, 0.12);
 }
-
 .btn-opcion:focus {
   outline: 2px solid #403c7c;
   outline-offset: 2px;
 }
-
 .btn-opcion:active {
   transform: scale(0.98);
 }
-
 .btn-opcion.activo {
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
 .circulo {
   width: 13px;
   height: 13px;
@@ -142,24 +158,22 @@ html, body {
   background-color: transparent;
   transition: background-color 0.3s ease;
 }
-
 .btn-opcion.activo .circulo {
   background-color: #403c7c;
   border: none;
 }
-
 .texto {
   font-size: 16px;
   font-weight: 500;
   color: #3d3d3d;
   line-height: 1;
 }
-
 .btn-opcion.activo .texto {
   font-weight: 700;
 }
 
-.boton-siguiente {
+/* BOTÓN SIGUIENTE */
+.btn-boysenberry {
   width: 100px;
   height: 40px;
   background-color: #403c7c;
@@ -174,25 +188,23 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
+  transition: background-color 0.3s;
   position: absolute;
   left: 50%;
-  top: 50%;
   transform: translateX(-50%);
+  top: 65%;
 }
-
-.boton-siguiente:hover {
+.btn-boysenberry:hover {
   background-color: #2e2963;
 }
-
 .texto-boton {
   margin: 0;
 }
 
-.menu-icon .boysenberry-text {
-  order: 2; /* Texto a la derecha del ícono */
-  margin-left: 8px; /* Espacio entre ícono y texto */
-  font-family: "Lato-MediumItalic", Helvetica;
-  font-size: 21px; /* Tamaño ajustado según Index.html */
-  color: #403c7c; /* Color ajustado según Index.html */
-  text-decoration: none;
+@media (max-width: 576px) {
+  .Berrytext {
+      width: 90%;
+      font-size: 18px;
+  }
 }
