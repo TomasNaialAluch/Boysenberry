@@ -159,5 +159,21 @@
       iconContainer.style.transform = 'scale(1)';
     });
   </script>
+    <div id="sideMenu" class="side-menu">
+      <a href="#">Inicio</a>
+      <a href="#">Planes</a>
+      <a href="#">Mi perfil</a>
+      <a href="#">Mis autos</a>
+      <a href="#">Mis pólizas</a>
+      <a href="#">Mis siniestros</a>
+      <a href="#">Ayuda</a>
+      <div class="side-menu-bottom">
+        <a href="#">Cerrar sesión</a>
+      </div>
+    </div>
+    <script>document.querySelector('.navbar-toggler').addEventListener('click', () => {
+      document.getElementById('sideMenu').classList.toggle('active');
+    });
+    </script>
 </body>
 </html>
