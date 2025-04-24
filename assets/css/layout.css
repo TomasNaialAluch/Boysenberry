@@ -137,14 +137,14 @@ body, html {
   border-bottom: 2px solid #403c7c;
 }
 .navbar-collapse {
-  background-color: #403c7c;
+  background-color: #fff;
   padding: 10px;
 }
 
 .navbar-collapse .nav-link {
-  color: white !important;
+  color: #3e3e3e !important;
 }
 
 .navbar-collapse .nav-link:hover {
-  color: #d1d1ff !important;
+  color: #403c7c !important;
 }
