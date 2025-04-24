@@ -17,26 +17,27 @@
 <body>
   <!-- Barra de navegación (Header) -->
   <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-custom">
-    <div class="container-fluid d-flex justify-content-between align-items-center">
-      <!-- Enlaces Izquierda: Como los archivos están en la misma carpeta (pages) se usan nombres simples -->
-      <div class="d-flex gap-3">
-        <a class="nav-link" href="Inquilinos.html">Inquilinos</a>
-        <a class="nav-link" href="Propietarios.html">Propietarios</a>
-        <a class="nav-link active-auto" href="Auto.html">Auto</a>
-        <a class="nav-link" href="Mascota.html">Mascota</a>
-        <a class="nav-link" href="Vida.html">Vida</a>
-        <a class="nav-link" href="Giveback.html">Giveback</a>
-      </div>
-
-      <!-- Logo centrado: Salir de pages para llegar a index -->
+    <div class="container-fluid">
       <a class="navbar-brand boysenberry-text" href="../index.html">Boysenberry</a>
-
-      <!-- Enlace a Mi cuenta (dentro de pages) -->
-      <div>
-        <a class="nav-link" href="MiCuenta.html">Mi cuenta</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuBoysenberry">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuBoysenberry">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item"><a class="nav-link" href="Inquilinos.html">Inquilinos</a></li>
+          <li class="nav-item"><a class="nav-link" href="Propietarios.html">Propietarios</a></li>
+          <li class="nav-item"><a class="nav-link" href="Auto.html">Auto</a></li>
+          <li class="nav-item"><a class="nav-link" href="Mascota.html">Mascota</a></li>
+          <li class="nav-item"><a class="nav-link" href="Vida.html">Vida</a></li>
+          <li class="nav-item"><a class="nav-link" href="Giveback.html">Giveback</a></li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="MiCuenta.html">Mi cuenta</a></li>
+        </ul>
       </div>
     </div>
   </nav>
+  
 
   <!-- Contenido Principal -->
   <main class="main-hero">

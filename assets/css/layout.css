@@ -126,4 +126,11 @@ body, html {
     background-color: #403c7c;
     color: #fff;
   }
+  @media (max-width: 768px) {
+    .boysenberry-text {
+      position: static;
+      transform: none;
+      margin-right: auto;
+    }
+  }
   
