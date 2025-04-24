@@ -136,3 +136,15 @@ body, html {
   color: #403c7c !important;
   border-bottom: 2px solid #403c7c;
 }
+.navbar-collapse {
+  background-color: #403c7c;
+  padding: 10px;
+}
+
+.navbar-collapse .nav-link {
+  color: white !important;
+}
+
+.navbar-collapse .nav-link:hover {
+  color: #d1d1ff !important;
+}
