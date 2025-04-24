@@ -110,6 +110,15 @@
       window.location.href = 'Usuario1.html';
     });
   </script>
+  <script>
+    const prefix = window.location.pathname.includes("/pages/") ? "" : "pages/";
+    document.querySelectorAll(".nav-link[href]").forEach(link => {
+      const href = link.getAttribute("href");
+      if (!href.startsWith("http") && !href.startsWith("..") && !href.includes("index.html")) {
+        link.setAttribute("href", prefix + href);
+      }
+    });
+  </script>
   
 </body>
 </html>
