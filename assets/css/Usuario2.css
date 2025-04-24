@@ -1,4 +1,4 @@
-/* RESET Y ESTILOS BASE */
+
 * {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
@@ -11,7 +11,7 @@ html, body {
   height: 100%;
 }
 
-/* HEADER */
+
 .stickybar {
   width: 100%;
   display: flex;
@@ -81,7 +81,7 @@ html, body {
   transition: transform 0.3s ease;
 }
 
-/* CONTENIDO PRINCIPAL */
+
 .usuarioTwo {
   width: 100%;
   min-height: 100vh;

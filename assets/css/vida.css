@@ -1,14 +1,14 @@
 /* ================================
   Estilos específicos para Vida
 =============================================== */
-/* Resaltar link activo en Vida */
+
 .nav-link.active-vida {
   color: #6c757d !important;
   font-weight: 500;
 }
 main.main-hero {
     width: 100%;
-    /* Fondo específico para Vida */
+    
     background-image: url('assets/VidaFondo.png');
     background-size: cover;
     background-position: center;
@@ -92,7 +92,7 @@ main.main-hero {
   Estilos para Seguro de Vida
 =================================== */
 
-/* Hero */
+
 main.main-hero {
     width: 100%;
     background-image: url('assets/VidaFondo.png');
@@ -113,7 +113,7 @@ main.main-hero {
     gap: 20px;
   }
   
-  /* Sección de Planes */
+  
   .plans-section {
     padding: 50px 20px;
   }
@@ -185,7 +185,7 @@ main.main-hero {
     background-color: #2e2963;
   }
   
-  /* Beneficios */
+  
   .benefits-section {
     padding: 50px 20px;
     background-color: #f8f9fa;
@@ -218,7 +218,7 @@ main.main-hero {
     color: #464646;
   }
   
-  /* Testimonios */
+  
   .testimonials-section {
     padding: 50px 20px;
   }
@@ -250,7 +250,7 @@ main.main-hero {
     font-weight: 600;
   }
   
-  /* FAQ */
+  
   .faq-section {
     padding: 50px 20px;
     max-width: 800px;
@@ -272,7 +272,7 @@ main.main-hero {
     color: #464646;
   }
   
-  /* Responsivo */
+  
   @media (max-width: 767px) {
     .plans-grid,
     .benefits-grid {

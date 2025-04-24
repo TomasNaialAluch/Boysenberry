@@ -1,14 +1,14 @@
 /* ================================
   Estilos específicos para Giveback
 =============================================== */
-/* Resaltar link activo en Giveback */
+
 .nav-link.active-giveback {
   color: #6c757d !important;
   font-weight: 500;
 }
 main.main-hero {
     width: 100%;
-    /* Fondo específico para Giveback */
+    
     background-image: url('assets/ref.png');
     background-size: cover;
     background-position: center;
@@ -89,7 +89,7 @@ main.main-hero {
     font-size: 16px;
     color: #464646;
   }
-  /* ===== Carousel de Proyectos ===== */
+  
 .projects-section .project-card {
     padding: 20px 0;
   }
@@ -103,7 +103,7 @@ main.main-hero {
     color: #464646;
   }
   
-  /* ===== Formulario de Causa ===== */
+  
   .cause-card {
     max-width: 400px;
     background: #f8f9fa;
@@ -119,7 +119,7 @@ main.main-hero {
     margin-top: 10px;
   }
   
-  /* ===== Estadísticas ===== */
+  
   .stats-grid .stat-card {
     background: #fff;
     border-radius: 10px;
@@ -136,7 +136,7 @@ main.main-hero {
     color: #464646;
   }
   
-  /* Responsivo */
+  
   @media (max-width: 767px) {
     .projects-section .project-card .row {
       flex-direction: column;
@@ -146,9 +146,9 @@ main.main-hero {
       max-width: 250px;
     }
   }
-  /* Botón “Apoyar esta causa” con estilo Boysenberry */
+  
 #causeForm .btn-plan {
-    background-color: #403c7c; /* violeta de marca */
+    background-color: #403c7c; 
     color: #ffffff;
     font-style: italic;
     font-weight: 500;

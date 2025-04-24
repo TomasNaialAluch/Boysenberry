@@ -13,7 +13,7 @@ main.main-hero {
   align-items: center;
   justify-content: center;
   padding: 80px 20px;
-  gap: 20px; /* Este gap se aplicará entre los elementos, pero lo usaremos junto con márgenes específicos */
+  gap: 20px; 
 }
 
 
@@ -22,7 +22,7 @@ main.main-hero {
 .titulo-principal {
   width: 100%;
   max-width: 777px;
-  margin: 0 auto 5px; /* Solo 5px de margen inferior para unirlo al siguiente texto */
+  margin: 0 auto 5px; 
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   font-family: 'Lato', sans-serif;
   font-size: 40px;
@@ -36,7 +36,7 @@ main.main-hero {
      Pegado al título y con separación adecuada del botón */
 .texto-secundario {
   width: 90%;
-  margin: 0 auto 20px; /* 20px de margen inferior para separar del botón */
+  margin: 0 auto 20px; 
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   font-family: 'Lato', sans-serif;
   font-size: 16px;
@@ -50,7 +50,7 @@ main.main-hero {
 .boton-principal {
   width: 230px;
   height: 36px;
-  margin: 0 auto; /* Sin margen inferior */
+  margin: 0 auto; 
   border-radius: 8px;
   box-shadow: 0 2px 14.1px 1px rgba(64, 60, 124, 0.54);
   background-color: #403c7c;
@@ -78,7 +78,7 @@ main.main-hero {
      Pegado al botón sin margen adicional */
 .texto-despues-boton {
   width: 90%;
-  margin: 0 auto; /* Sin margen superior para "pegarse" al botón */
+  margin: 0 auto; 
   text-align: center;
   font-family: 'Lato', sans-serif;
   font-size: 16px;

@@ -1,14 +1,14 @@
 /* ================================
   Estilos específicos para Propietarios
 =================================== */
-/* Resaltar link activo en Propietarios */
+
 .nav-link.active-propietarios {
   color: #6c757d !important;
   font-weight: 500;
 }
 main.main-hero {
     width: 100%;
-    /* Fondo específico para Propietarios */
+    
     background-image: url('assets/PropietariosFondo.png');
     background-size: cover;
     background-position: center;
@@ -92,7 +92,7 @@ main.main-hero {
   Estilos para Propietarios
 =================================== */
 
-/* Hero dividido */
+
 .hero-container {
     width: 100%;
     margin: 0 auto;
@@ -120,7 +120,7 @@ main.main-hero {
     border-radius: 10px;
   }
   
-  /* Secciones */
+  
   .section-title {
     font-family: 'Lato', sans-serif;
     font-size: 32px;
@@ -129,7 +129,7 @@ main.main-hero {
     margin-bottom: 30px;
   }
   
-  /* Planes */
+  
   .planes-section {
     padding: 50px 20px;
   }
@@ -194,7 +194,7 @@ main.main-hero {
     background-color: #2e2963;
   }
   
-  /* Ventajas */
+  
   .ventajas-section {
     padding: 50px 20px;
   }
@@ -226,7 +226,7 @@ main.main-hero {
     color: #464646;
   }
   
-  /* Testimonios */
+  
   .testimonios-section {
     padding: 50px 20px;
   }
@@ -257,7 +257,7 @@ main.main-hero {
     font-weight: 600;
   }
   
-  /* FAQ */
+  
   .faq-section {
     padding: 50px 20px;
     max-width: 800px;
@@ -279,7 +279,7 @@ main.main-hero {
     color: #464646;
   }
   
-  /* Responsivo */
+  
   @media (max-width: 767px) {
     .hero-container {
       flex-direction: column;
