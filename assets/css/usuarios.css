@@ -1,140 +1,141 @@
 * {
-    -webkit-font-smoothing: antialiased;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  html, body {
-    font-family: "Lato", sans-serif;
-    background-color: #ffffff;
-    height: 100%;
-  }
-  
-  .stickybar {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    background-color: #ffffff;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    height: 50px;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-  }
-  
-  .menu-icon {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .navbar-toggler {
-    border: none;
-    background-color: transparent;
-    padding: 0;
-  }
-  
-  .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(64, 60, 124, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-    width: 24px;
-    height: 24px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
-  }
-  
-  .boysenberry-text {
-    font-family: "Lato", sans-serif;
-    font-size: 21px;
-    font-style: italic;
-    font-weight: 500;
-    color: #403c7c;
-    text-decoration: none;
-  }
-  
-  .right-icons {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-  }
-  
-  .icon-container {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    opacity: 0;
-    transform: scale(0);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-  }
-  
-  .icon-person {
-    font-size: 24px;
-    color: #403c7c;
-    transition: transform 0.3s ease, color 0.3s ease, opacity 0.3s ease;
-    cursor: pointer;
-  }
-  
-  .icon-person:hover {
-    transform: scale(1.2);
-    color: #2e2963;
-  }
-  
-  .icon-question-circle,
-  .icon-info-circle {
-    font-size: 24px;
-    color: #403c7c;
-    transition: transform 0.3s ease;
-  }
-  
-  .berry-outside {
-    margin-top: 80px;
-    text-align: center;
-  }
-  
-  .imagen-berry {
-    width: 80px;
-    height: 80px;
-    object-fit: contain;
-    transition: all 0.3s ease;
-  }
-  
-  .Berrytext {
-    width: 451px;
-    margin: 20px auto;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-size: 22px;
-    font-weight: 500;
-    color: #5d5d5d;
-    text-align: center;
-    line-height: 1.2;
-  }
-  
-  .side-menu {
-    position: fixed;
-    top: 50px;
-    left: -250px;
-    width: 250px;
-    height: 100%;
-    background-color: #403c7c;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    gap: 15px;
-    transition: left 0.3s ease;
-    z-index: 999;
-  }
-  
-  .side-menu a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-  }
-  
-  .side-menu.active {
-    left: 0;
-  }
-  
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: "Lato", sans-serif;
+  background-color: #ffffff;
+  height: 100%;
+}
+
+.stickybar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  height: 50px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.menu-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-toggler {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(64, 60, 124, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.boysenberry-text {
+  font-family: "Lato", sans-serif;
+  font-size: 21px;
+  font-style: italic;
+  font-weight: 500;
+  color: #403c7c;
+  text-decoration: none;
+}
+
+.right-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.icon-person {
+  font-size: 24px;
+  color: #403c7c;
+  transition: transform 0.3s ease, color 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.icon-person:hover {
+  transform: scale(1.2);
+  color: #2e2963;
+}
+
+.icon-question-circle,
+.icon-info-circle {
+  font-size: 24px;
+  color: #403c7c;
+  transition: transform 0.3s ease;
+}
+
+.berry-outside {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.imagen-berry {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+
+.Berrytext {
+  width: 451px;
+  margin: 20px auto;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 22px;
+  font-weight: 500;
+  color: #5d5d5d;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.side-menu {
+  position: fixed;
+  top: 50px;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #403c7c;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 15px;
+  transition: left 0.3s ease;
+  z-index: 999;
+}
+
+.side-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.side-menu.active {
+  left: 0;
+}
+
+/*# sourceMappingURL=usuarios.css.map */
