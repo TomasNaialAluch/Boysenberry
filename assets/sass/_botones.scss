@@ -1,0 +1,26 @@
+.boton-principal {
+  width: 230px;
+  height: 36px;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 14.1px 1px rgba(64,60,124,0.54);
+  background-color: #403c7c;
+  color: white;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  padding: 8px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boton-principal:hover {
+  background-color: #2e2963;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 18px rgba(64,60,124,0.7);
+}

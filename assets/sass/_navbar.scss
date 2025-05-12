@@ -1,0 +1,68 @@
+.navbar-custom {
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  padding: 0 20px;
+}
+
+.boysenberry-text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Lato", Helvetica, sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 21px;
+  color: #403c7c;
+  text-decoration: none;
+}
+
+.nav-link {
+  font-size: 14px;
+  color: #3e3e3e;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.nav-link:hover {
+  color: #403c7c;
+}
+
+.nav-link.active-inquilinos,
+.nav-link.active-propietarios,
+.nav-link.active-auto,
+.nav-link.active-mascota,
+.nav-link.active-vida,
+.nav-link.active-giveback {
+  font-weight: 600;
+  color: #403c7c !important;
+  border-bottom: 2px solid #403c7c;
+}
+
+.navbar-collapse {
+  background-color: #fff;
+  padding: 10px;
+}
+
+.navbar-collapse .nav-link {
+  color: #3e3e3e !important;
+}
+
+.navbar-collapse .nav-link:hover {
+  color: #403c7c !important;
+}
+
+@media (max-width: 768px) {
+  .boysenberry-text {
+    position: static;
+    transform: none;
+    margin-right: auto;
+  }
+}
