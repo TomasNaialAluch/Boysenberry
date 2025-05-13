@@ -32,7 +32,7 @@
 <div class="hero-content">
 <h1 class="titulo-principal">Accedé a tu cuenta</h1>
 <p class="texto-secundario">Iniciá sesión con tu cuenta de Google o registrate en Boysenberry.</p>
-<div class="d-flex flex-column align-items-center gap-3">
+<div class="d-flex flex-column align-items-center gap-3" id="botonera">
 <a class="btn d-flex align-items-center gap-2" href="#" style="background-color: #fff; border: 1px solid #ddd; padding: 10px 20px; border-radius: 6px;">
 <img alt="Google" src="https://developers.google.com/identity/images/g-logo.png" width="20"/>
 <span style="color: #555;">Ingresar con Google</span>
@@ -41,19 +41,18 @@
 <a class="btn btn-link" href="#" style="font-size: 0.9rem;">Crear una cuenta nueva</a>
 </div>
 </div>
-
-<div class="login-form d-none" id="formLogin">
-<input class="form-control mb-2" placeholder="Usuario o email" type="text"/>
-<input class="form-control mb-3" placeholder="Contraseña" type="password"/>
+<div class="login-form d-none d-flex flex-column align-items-center gap-2 mt-4" id="formLogin">
+<input class="form-control mb-2" placeholder="Usuario o email" style="max-width: 400px; padding: 10px 14px; border-radius: 10px; border: 1px solid #ccc; margin-bottom: 16px;" type="text"/>
+<input class="form-control mb-3" placeholder="Contraseña" style="max-width: 400px; padding: 10px 14px; border-radius: 10px; border: 1px solid #ccc; margin-bottom: 16px;" type="password"/>
 <button class="boton-principal w-100">Entrar</button>
 </div>
-<div class="register-form d-none" id="formRegister">
-<input class="form-control mb-2" placeholder="Nombre de usuario" type="text"/>
-<input class="form-control mb-2" placeholder="Correo electrónico" type="email"/>
-<input class="form-control mb-2" placeholder="Fecha de nacimiento" type="date"/>
-<input class="form-control mb-2" placeholder="Dirección" type="text"/>
-<input class="form-control mb-2" placeholder="Contraseña" type="password"/>
-<input class="form-control mb-2" placeholder="Repetir contraseña" type="password"/>
+<div class="register-form d-none d-flex flex-column align-items-center gap-2 mt-4" id="formRegister">
+<input class="form-control mb-2" placeholder="Nombre de usuario" style="max-width: 400px; padding: 10px 14px; border-radius: 10px; border: 1px solid #ccc; margin-bottom: 16px;" type="text"/>
+<input class="form-control mb-2" placeholder="Correo electrónico" style="max-width: 400px; padding: 10px 14px; border-radius: 10px; border: 1px solid #ccc; margin-bottom: 16px;" type="email"/>
+<input class="form-control mb-2" placeholder="Fecha de nacimiento" style="max-width: 400px; padding: 10px 14px; border-radius: 10px; border: 1px solid #ccc; margin-bottom: 16px;" type="date"/>
+<input class="form-control mb-2" placeholder="Dirección" style="max-width: 400px; padding: 10px 14px; border-radius: 10px; border: 1px solid #ccc; margin-bottom: 16px;" type="text"/>
+<input class="form-control mb-2" placeholder="Contraseña" style="max-width: 400px; padding: 10px 14px; border-radius: 10px; border: 1px solid #ccc; margin-bottom: 16px;" type="password"/>
+<input class="form-control mb-2" placeholder="Repetir contraseña" style="max-width: 400px; padding: 10px 14px; border-radius: 10px; border: 1px solid #ccc; margin-bottom: 16px;" type="password"/>
 <small class="text-muted mb-2 d-block">La contraseña debe tener al menos 8 caracteres, una mayúscula y un número.</small>
 <button class="boton-principal w-100">Registrarme</button>
 </div>
@@ -87,14 +86,30 @@
   </script>
 
 <script>
-      document.querySelector('.boton-principal:nth-of-type(2)').addEventListener('click', () => {
-        document.getElementById('formLogin').classList.remove('d-none');
-        document.getElementById('formRegister').classList.add('d-none');
-      });
-      document.querySelector('.btn-link').addEventListener('click', () => {
-        document.getElementById('formLogin').classList.add('d-none');
-        document.getElementById('formRegister').classList.remove('d-none');
-      });
-    </script>
+  const botonera = document.getElementById('botonera');
+  const loginForm = document.getElementById('formLogin');
+  const registerForm = document.getElementById('formRegister');
+
+  const loginBtn = botonera.querySelectorAll('.boton-principal')[1];
+  const crearCuentaLink = botonera.querySelector('.btn-link');
+
+  if (loginBtn) {
+    loginBtn.addEventListener('click', () => {
+      botonera.classList.add('d-none');
+      loginForm.classList.remove('d-none');
+      registerForm.classList.add('d-none');
+    });
+  }
+
+  if (crearCuentaLink) {
+    crearCuentaLink.addEventListener('click', (e) => {
+      e.preventDefault();
+      botonera.classList.add('d-none');
+      loginForm.classList.add('d-none');
+      registerForm.classList.remove('d-none');
+    });
+  }
+</script>
+
 </body>
 </html>
