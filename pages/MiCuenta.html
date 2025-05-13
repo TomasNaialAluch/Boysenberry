@@ -45,7 +45,7 @@
 <input class="form-control mb-2" placeholder="Usuario o email" style="max-width: 400px; padding: 10px 14px; border-radius: 10px; border: 1px solid #ccc; margin-bottom: 16px;" type="text"/>
 <input class="form-control mb-3" placeholder="Contraseña" style="max-width: 400px; padding: 10px 14px; border-radius: 10px; border: 1px solid #ccc; margin-bottom: 16px;" type="password"/>
 <button class="boton-principal w-100">Entrar</button>
-</div>
+<button class="btn btn-link mt-2" id="btn-volver">Volver</button></div>
 <div class="register-form d-none d-flex flex-column align-items-center gap-2 mt-4" id="formRegister">
 <input class="form-control mb-2" placeholder="Nombre de usuario" style="max-width: 400px; padding: 10px 14px; border-radius: 10px; border: 1px solid #ccc; margin-bottom: 16px;" type="text"/>
 <input class="form-control mb-2" placeholder="Correo electrónico" style="max-width: 400px; padding: 10px 14px; border-radius: 10px; border: 1px solid #ccc; margin-bottom: 16px;" type="email"/>
@@ -55,7 +55,7 @@
 <input class="form-control mb-2" placeholder="Repetir contraseña" style="max-width: 400px; padding: 10px 14px; border-radius: 10px; border: 1px solid #ccc; margin-bottom: 16px;" type="password"/>
 <small class="text-muted mb-2 d-block">La contraseña debe tener al menos 8 caracteres, una mayúscula y un número.</small>
 <button class="boton-principal w-100">Registrarme</button>
-</div>
+<button class="btn btn-link mt-2" id="btn-volver-reg">Volver</button></div>
 </main>
 <div class="side-menu" id="sideMenu">
 <a href="#">Inicio</a>
@@ -94,6 +94,9 @@
     const loginBtn = document.getElementById("btn-ingresar");
     const crearCuentaBtn = document.getElementById("btn-crear-cuenta");
 
+    const volverLogin = document.getElementById("btn-volver");
+    const volverRegistro = document.getElementById("btn-volver-reg");
+
     if (loginBtn) {
       loginBtn.addEventListener("click", () => {
         botonera.classList.add("d-none");
@@ -108,6 +111,20 @@
         botonera.classList.add("d-none");
         loginForm.classList.add("d-none");
         registerForm.classList.remove("d-none");
+      });
+    }
+
+    if (volverLogin) {
+      volverLogin.addEventListener("click", () => {
+        loginForm.classList.add("d-none");
+        botonera.classList.remove("d-none");
+      });
+    }
+
+    if (volverRegistro) {
+      volverRegistro.addEventListener("click", () => {
+        registerForm.classList.add("d-none");
+        botonera.classList.remove("d-none");
       });
     }
   });
