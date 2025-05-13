@@ -38,7 +38,7 @@
 <span style="color: #555;">Ingresar con Google</span>
 </a>
 <a class="boton-principal" href="#">Ingresar</a>
-<a class="btn btn-link" href="#" style="font-size: 0.9rem;">Crear una cuenta nueva</a>
+<a class="btn btn-link" href="#" id="btn-crear-cuenta" style="font-size: 0.9rem;">Crear una cuenta nueva</a>
 </div>
 </div>
 <div class="login-form d-none d-flex flex-column align-items-center gap-2 mt-4" id="formLogin">
@@ -86,29 +86,31 @@
   </script>
 
 <script>
-  const botonera = document.getElementById('botonera');
-  const loginForm = document.getElementById('formLogin');
-  const registerForm = document.getElementById('formRegister');
+  document.addEventListener("DOMContentLoaded", () => {
+    const botonera = document.getElementById("botonera");
+    const loginForm = document.getElementById("formLogin");
+    const registerForm = document.getElementById("formRegister");
 
-  const loginBtn = botonera.querySelectorAll('.boton-principal')[1];
-  const crearCuentaLink = botonera.querySelector('.btn-link');
+    const loginBtn = document.getElementById("btn-ingresar");
+    const crearCuentaBtn = document.getElementById("btn-crear-cuenta");
 
-  if (loginBtn) {
-    loginBtn.addEventListener('click', () => {
-      botonera.classList.add('d-none');
-      loginForm.classList.remove('d-none');
-      registerForm.classList.add('d-none');
-    });
-  }
+    if (loginBtn) {
+      loginBtn.addEventListener("click", () => {
+        botonera.classList.add("d-none");
+        loginForm.classList.remove("d-none");
+        registerForm.classList.add("d-none");
+      });
+    }
 
-  if (crearCuentaLink) {
-    crearCuentaLink.addEventListener('click', (e) => {
-      e.preventDefault();
-      botonera.classList.add('d-none');
-      loginForm.classList.add('d-none');
-      registerForm.classList.remove('d-none');
-    });
-  }
+    if (crearCuentaBtn) {
+      crearCuentaBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        botonera.classList.add("d-none");
+        loginForm.classList.add("d-none");
+        registerForm.classList.remove("d-none");
+      });
+    }
+  });
 </script>
 
 </body>
