@@ -278,7 +278,7 @@ main.main-hero {
 main.main-hero .boton-secundario {
   background: none;
   border: none;
-  margin-top: 8px;
+  margin-top: 4px;
   font-size: 14px;
   color: #007bff;
   text-decoration: underline;
@@ -305,7 +305,7 @@ main.main-hero .boton-secundario {
 }
 
 main.main-hero .nota {
-  margin-top: 6px;
+  margin-top: 2px;
   font-size: 14px;
   color: #777;
   text-align: center;
