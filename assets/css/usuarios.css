@@ -175,19 +175,50 @@ html, body {
   white-space: nowrap;
 }
 
-main.main-hero .espacio-extra {
+.espacio-extra {
   margin-bottom: 16px;
 }
 
-main.main-hero .boton-secundario {
-  font-size: 12px !important;
-  margin-top: 6px !important;
-  color: #007bff !important;
-  text-decoration: underline;
-  display: inline-block;
+.boton-principal,
+.boton-volver {
+  width: 230px;
+  height: 36px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 500;
+  border: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
 }
 
-main.main-hero .boton-volver {
+.boton-principal {
+  background-color: #403c7c;
+  color: white;
+  margin-top: 10px;
+  box-shadow: 0 2px 14px rgba(64, 60, 124, 0.54);
+}
+
+.boton-principal:hover {
+  background-color: #2e2963;
+  transform: translateY(-2px);
+}
+
+.boton-secundario {
+  background: none;
+  border: none;
+  margin-top: 12px;
+  font-size: 13px;
+  color: #007bff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.boton-volver {
   width: 230px;
   background-color: #f3f4f6;
   color: #333;
@@ -196,26 +227,18 @@ main.main-hero .boton-volver {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
   border: 1px solid #ccc;
   text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 36px;
-  border-radius: 8px;
-  font-size: 16px;
-  font-weight: 500;
-  transition: all 0.3s ease;
 }
 
-main.main-hero .boton-volver:hover {
+.boton-volver:hover {
   background-color: #e0e0e0;
   color: #111;
   transform: translateY(-1px);
 }
 
-main.main-hero .nota {
-  margin-top: 8px !important;
-  font-size: 12px !important;
-  color: #777 !important;
-  text-align: center !important;
-  white-space: nowrap !important;
+.nota {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #777;
+  text-align: center;
+  white-space: nowrap;
 }
