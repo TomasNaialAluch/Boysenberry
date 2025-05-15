@@ -28,16 +28,13 @@
   transform: translateY(-2px);
 }
 
-main.main-hero .boton-secundario {
-  background: none;
-  border: none;
-  margin-top: 4px;
-  font-size: 14px;
-  color: #007bff;
-  text-decoration: underline;
-  cursor: pointer;
+main.main-hero a.boton-secundario {
+  margin-top: 6px !important;
+  font-size: 14px !important;
   text-align: center;
   display: block;
+  text-decoration: underline;
+  color: #007bff;
 }
 
 .boton-volver {
@@ -58,9 +55,9 @@ main.main-hero .boton-secundario {
 }
 
 main.main-hero .nota {
-  margin-top: 2px;
-  font-size: 14px;
-  color: #777;
+  margin-top: 6px !important;
+  font-size: 13px !important;
+  color: #777 !important;
   text-align: center;
   white-space: nowrap;
 }
