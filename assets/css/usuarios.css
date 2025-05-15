@@ -175,10 +175,6 @@ html, body {
   white-space: nowrap;
 }
 
-.espacio-extra {
-  margin-bottom: 16px;
-}
-
 .boton-principal,
 .boton-volver {
   width: 230px;
