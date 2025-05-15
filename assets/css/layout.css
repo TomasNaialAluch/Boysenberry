@@ -214,6 +214,28 @@ main.main-hero {
   box-shadow: 0 4px 18px rgba(64, 60, 124, 0.7);
 }
 
+.boton-volver {
+  background-color: #f3f4f6;
+  color: #333;
+  border: 1px solid #ccc;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 10px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  margin-top: 2rem;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.boton-volver:hover {
+  background-color: #e0e0e0;
+  color: #111;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
+
 ::selection {
   background-color: #403c7c;
   color: #fff;
@@ -223,5 +245,3 @@ main.main-hero {
   background-color: #403c7c;
   color: #fff;
 }
-
-/*# sourceMappingURL=layout.css.map */
