@@ -138,4 +138,39 @@ html, body {
   left: 0;
 }
 
-/*# sourceMappingURL=usuarios.css.map */
+.espacio-extra {
+  margin-bottom: 16px;
+}
+
+.boton-volver {
+  width: 230px;
+  background-color: #f3f4f6;
+  color: #333;
+  font-style: normal;
+  margin-top: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+  border: 1px solid #ccc;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 36px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.boton-volver:hover {
+  background-color: #e0e0e0;
+  color: #111;
+  transform: translateY(-1px);
+}
+
+.nota {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #777;
+  text-align: center;
+  white-space: nowrap;
+}
