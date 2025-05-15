@@ -174,3 +174,13 @@ html, body {
   text-align: center;
   white-space: nowrap;
 }
+
+.boton-secundario {
+  font-size: 12px;
+  margin-top: 6px;
+}
+
+.nota {
+  margin-top: 8px;
+  font-size: 12px;
+}
