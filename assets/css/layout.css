@@ -275,7 +275,7 @@ main.main-hero {
   transform: translateY(-2px);
 }
 
-.boton-secundario {
+main.main-hero .boton-secundario {
   background: none;
   border: none;
   margin-top: 8px;
@@ -283,6 +283,8 @@ main.main-hero {
   color: #007bff;
   text-decoration: underline;
   cursor: pointer;
+  text-align: center;
+  display: block;
 }
 
 .boton-volver {
@@ -302,7 +304,7 @@ main.main-hero {
   transform: translateY(-1px);
 }
 
-.nota {
+main.main-hero .nota {
   margin-top: 6px;
   font-size: 14px;
   color: #777;
