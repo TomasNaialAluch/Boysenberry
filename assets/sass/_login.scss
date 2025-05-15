@@ -1,10 +1,45 @@
-.boton-secundario {
-    font-size: 12px;
-    margin-top: 6px;
+main.main-hero .espacio-extra {
+    margin-bottom: 16px;
   }
   
-  .nota {
-    margin-top: 8px;
-    font-size: 12px;
+  main.main-hero .boton-secundario {
+    font-size: 12px !important;
+    margin-top: 6px !important;
+    color: #007bff !important;
+    text-decoration: underline;
+    display: inline-block;
+  }
+  
+  main.main-hero .boton-volver {
+    width: 230px;
+    background-color: #f3f4f6;
+    color: #333;
+    font-style: normal;
+    margin-top: 40px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+    border: 1px solid #ccc;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  main.main-hero .boton-volver:hover {
+    background-color: #e0e0e0;
+    color: #111;
+    transform: translateY(-1px);
+  }
+  
+  main.main-hero .nota {
+    margin-top: 8px !important;
+    font-size: 12px !important;
+    color: #777 !important;
+    text-align: center !important;
+    white-space: nowrap !important;
   }
   
