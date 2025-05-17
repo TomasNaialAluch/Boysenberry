@@ -5,27 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Iniciar Sesión - Boysenberry</title>
 
-  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-
-  <!-- Tus estilos compilados -->
   <link rel="stylesheet" href="../assets/css/layout.css" />
   <link rel="stylesheet" href="../assets/css/usuarios.css" />
+  <link rel="stylesheet" href="../assets/css/login.css" />
 </head>
 <body>
   <main class="main-hero">
-    <h1 class="titulo-principal">Iniciar Sesión</h1>
+    <h1 class="titulo-principal fade-in delay-0">Iniciar Sesión</h1>
 
-    <input class="form-control" style="max-width: 400px;" placeholder="Usuario o email" type="text" />
-    <input class="form-control espacio-extra" style="max-width: 400px;" placeholder="Contraseña" type="password" />
+    <div class="fade-in delay-1">
+      <input id="userInput" class="form-control" style="max-width: 400px;" placeholder="Usuario o email" type="text" />
+      <input id="passInput" class="form-control espacio-extra" style="max-width: 400px;" placeholder="Contraseña" type="password" />
+    </div>
 
-    <button class="boton-principal">Entrar</button>
+    <div class="fade-in delay-2">
+      <button id="loginBtn" class="boton-principal inactivo">Entrar</button>
+    </div>
 
-    <a href="Registro.html" class="boton-secundario">¿No tenés cuenta? Crear una</a>
-
-    <a href="MiCuenta.html" class="boton-volver">Volver</a>
-
-    <div class="nota">También podés ingresar con Google desde la pantalla anterior.</div>
+    <div class="fade-in delay-3">
+      <a href="Registro.html" class="boton-secundario">¿No tenés cuenta? Crear una</a>
+      <a href="MiCuenta.html" class="boton-volver">Volver</a>
+      <div class="nota">También podés ingresar con Google desde la pantalla anterior.</div>
+    </div>
   </main>
+
+  <script>
+    const user = document.getElementById('userInput');
+    const pass = document.getElementById('passInput');
+    const btn = document.getElementById('loginBtn');
+
+    function validar() {
+      if (user.value.trim() && pass.value.trim()) {
+        btn.classList.remove('inactivo');
+      } else {
+        btn.classList.add('inactivo');
+      }
+    }
+
+    user.addEventListener('input', validar);
+    pass.addEventListener('input', validar);
+  </script>
 </body>
 </html>
