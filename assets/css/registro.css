@@ -15,12 +15,15 @@
     }
   }
   
-  #crearBtn.inactivo {
-    background-color: #ccc;
-    pointer-events: none;
-    cursor: not-allowed;
-    color: white;
-  }
+  .inactivo {
+  background-color: #eeeeee;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  opacity: 1;
+  cursor: default;
+  pointer-events: none;
+}
   
   
   
