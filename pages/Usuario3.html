@@ -178,6 +178,19 @@
     <script>document.querySelector('.navbar-toggler').addEventListener('click', () => {
       document.getElementById('sideMenu').classList.toggle('active');
     });
+    document.addEventListener('click', function (e) {
+  const sideMenu = document.getElementById('sideMenu');
+  const navbar = document.querySelector('header.stickybar');
+
+  const isClickInsideMenu = sideMenu.contains(e.target);
+  const isClickOnNavbar = navbar.contains(e.target);
+  const isMenuOpen = sideMenu.classList.contains('active');
+
+  if (!isClickInsideMenu && !isClickOnNavbar && isMenuOpen) {
+    sideMenu.classList.remove('active');
+  }
+});
+
     </script>
 </body>
 </html>
