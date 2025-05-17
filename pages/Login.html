@@ -29,18 +29,26 @@
     </div>
   </header>
 
-  <div id="sideMenu" class="side-menu">
-    <a href="#">Inicio</a>
-    <a href="#">Planes</a>
-    <a href="#">Mi perfil</a>
-    <a href="#">Mis autos</a>
-    <a href="#">Mis pólizas</a>
-    <a href="#">Mis siniestros</a>
-    <a href="#">Ayuda</a>
-    <div class="side-menu-bottom">
-      <a href="#">Cerrar sesión</a>
-    </div>
+  
+<div id="sideMenu" class="side-menu">
+  <div class="close-btn" onclick="toggleSideMenu()">×</div>
+  <a href="#">Inicio</a>
+  <a href="#">Planes</a>
+  <a href="#">Mi perfil</a>
+  <a href="#">Mis autos</a>
+  <a href="#">Mis pólizas</a>
+  <a href="#">Mis siniestros</a>
+  <a href="#">Ayuda</a>
+  <div class="side-menu-bottom">
+    <a href="#">Cerrar sesión</a>
   </div>
+  <div class="side-menu-socials">
+    <a href="#"><i class="bi bi-facebook"></i></a>
+    <a href="#"><i class="bi bi-instagram"></i></a>
+    <a href="#"><i class="bi bi-twitter-x"></i></a>
+  </div>
+</div>
+<div id="overlay" class="overlay"></div>
 
   <main class="main-hero">
     <h1 class="titulo-principal">Iniciar Sesión</h1>
@@ -70,7 +78,13 @@
     document.querySelector('.navbar-toggler').addEventListener('click', () => {
         document.getElementById('sideMenu').classList.toggle('active');
     });
-  </script>
+  
+    function toggleSideMenu() {
+      const overlay = document.getElementById('overlay');
+      overlay.classList.toggle('active');
+      document.getElementById('sideMenu').classList.toggle('active');
+    }
+    </script>
 
 </body>
 </html>
