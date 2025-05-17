@@ -79,5 +79,36 @@
     direccion.addEventListener('input', validar);
     password.addEventListener('input', validar);
   </script>
+
+<script>
+        // Función para seleccionar una única opción
+        function seleccionExclusiva(botonClic) {
+            const todos = document.querySelectorAll(".btn-opcion");
+            todos.forEach((b) => {
+                b.classList.remove("activo");
+                b.setAttribute("aria-pressed", "false");
+            });
+            botonClic.classList.add("activo");
+            botonClic.setAttribute("aria-pressed", "true");
+        }
+        // Al pulsar "Siguiente", se redirige a Usuario2.html solo si el usuario seleccionó "No"
+        document.querySelector('.btn-boysenberry').addEventListener('click', function() {
+            const activo = document.querySelector('.btn-opcion.activo');
+            if (activo && activo.querySelector('.texto').textContent.trim() === "No") {
+                window.location.href = "Usuario2.html";
+            }
+        });
+        // Animación al hacer clic en el ícono Person Raised
+        const personIcon = document.getElementById('personIcon');
+        const iconContainer = document.getElementById('iconContainer');
+        personIcon.addEventListener('click', () => {
+            // Ocultar el ícono Person Raised
+            personIcon.style.opacity = '0';
+            personIcon.style.pointerEvents = 'none'; // Desactivar interacción
+            // Mostrar el contenedor de íconos Question e Info
+            iconContainer.style.opacity = '1';
+            iconContainer.style.transform = 'scale(1)';
+        });
+    </script>
 </body>
 </html>
