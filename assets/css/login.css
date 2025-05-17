@@ -1,7 +1,7 @@
 .fade-in {
     opacity: 0;
     transform: translateY(10px);
-    animation: aparecer 0.3s ease forwards;
+    animation: aparecer 0.1s ease forwards;
   }
   
   .delay-0 { animation-delay: 0s; }
