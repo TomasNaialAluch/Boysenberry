@@ -1,7 +1,7 @@
 .fade-in {
     opacity: 0;
     transform: translateY(10px);
-    animation: aparecer 0.5s ease forwards;
+    animation: aparecer 0.3s ease forwards;
   }
   
   .delay-0 { animation-delay: 0s; }
@@ -23,9 +23,5 @@
     color: white;
   }
   
-  #loginBtn:not(.inactivo) {
-    background-color: #6b3df2;
-    color: white;
-    cursor: pointer;
-  }
+  
   
