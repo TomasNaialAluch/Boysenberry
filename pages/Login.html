@@ -11,23 +11,20 @@
   <link rel="stylesheet" href="../assets/css/login.css" />
 </head>
 <body>
-  <main class="main-hero">
+  <main class="main-hero d-flex flex-column align-items-center gap-3">
+
     <h1 class="titulo-principal fade-in delay-0">Iniciar Sesión</h1>
 
-    <div class="fade-in delay-1">
-      <input id="userInput" class="form-control" style="max-width: 400px;" placeholder="Usuario o email" type="text" />
-      <input id="passInput" class="form-control espacio-extra" style="max-width: 400px;" placeholder="Contraseña" type="password" />
-    </div>
+    <input id="userInput" class="form-control fade-in delay-1" style="max-width: 400px;" placeholder="Usuario o email" type="text" />
+    <input id="passInput" class="form-control espacio-extra fade-in delay-1" style="max-width: 400px;" placeholder="Contraseña" type="password" />
 
-    <div class="fade-in delay-2">
-      <button id="loginBtn" class="boton-principal inactivo">Entrar</button>
-    </div>
+    <button id="loginBtn" class="boton-principal fade-in delay-2 inactivo">Entrar</button>
 
-    <div class="fade-in delay-3">
-      <a href="Registro.html" class="boton-secundario">¿No tenés cuenta? Crear una</a>
-      <a href="MiCuenta.html" class="boton-volver">Volver</a>
-      <div class="nota">También podés ingresar con Google desde la pantalla anterior.</div>
-    </div>
+    <a href="Registro.html" class="boton-secundario fade-in delay-3">¿No tenés cuenta? Crear una</a>
+    <a href="MiCuenta.html" class="boton-volver fade-in delay-3">Volver</a>
+
+    <div class="nota fade-in delay-3">También podés ingresar con Google desde la pantalla anterior.</div>
+
   </main>
 
   <script>
